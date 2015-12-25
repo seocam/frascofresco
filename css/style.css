@@ -1,0 +1,524 @@
+@charset "utf-8";
+/*
+
+ *Wealth Loss landing page template
+ *Author : Jitu chauhan
+ *
+*/
+
+/*----------------------------------------------------------
+							Layout
+
+			*Nav 							/ 	#nav
+			*Intro 							/	#intro
+		 	*Weight Loss 					/	#weight-loss-section
+			*Fitness Healthy				/ 	#fitness-healthy-section
+		    *Burn Excess Fat				/	#burn-excess-fat-section
+			*Testimonal 					/ 	#testimonal-section
+			*Contacts						/	#contacts				
+			*Footer							/   #footer
+	
+---------------------------------------------*/
+
+/*--------------------------------------------
+	  Color
+	  	     				primary :  color: #f5d845; / 
+														  #99ca3b
+	h1, h2, h3, h4, h5, h6 :  		   color: #f5d845;
+		               			  p :    color: #69666c;
+				   
+--------------------------------------------------------*/
+
+/*--------------------------------------------------------
+	  	Font
+
+			h1, h2, h3, h4, h5, h6 :		font-family: 'Roboto', sans-serif;
+		              						    p :	font-family: 'Roboto', sans-serif;
+				   
+--------------------------------------------------------*/
+
+/*--------------------------------
+	  		General
+--------------------------------*/
+
+body {
+	font-size: 16px;
+	font-family: 'Roboto', sans-serif;
+	-webkit-font-smoothing: antialiased;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Roboto', serif;
+	font-weight: 300;
+	margin: 0px;
+	color: #2c2731;
+	-webkit-font-smoothing: antialiased;
+}
+h1 {
+	font-size: 42px;
+	margin-bottom: 30px;
+}
+h2 {
+	font-size: 26px;
+	margin-bottom: 20px;
+	color: #364152;
+}
+h3 {
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+p {
+	font-size: 16px;
+	font-weight: 300;
+	font-family: 'Roboto', sans-serif;
+	margin-bottom: 30px;
+	line-height: 26px;
+	color: #69666c;
+	-webkit-font-smoothing: antialiased;
+}
+a {
+	color: #1d1922;
+}
+a:hover {
+	color: #99ca3b;
+}
+.intro-btn {
+	padding: 15px 28px;
+	border-radius: 2px;
+	border: none;
+}
+.btn-green {
+	background: #aece35;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 18px;
+	font-weight: 300;
+	letter-spacing: 0px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+	font-weight: 400;
+	font-size: 20px;
+}
+.btn-green:hover, .btn-yellow {
+	background: #f5d845;
+	color: #fff;
+}
+.btn-yellow:hover {
+	background-color:#aece35;
+}
+.btn-quote {
+	padding: 15px 52px;
+	border-radius: 2px;
+	font-size:20px;
+	border: none;
+	font-family: 'Roboto', serif;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+	margin-bottom: 10px;
+	font-weight: 400;
+}
+.btn-quote:hover {
+	background-color: #f5d845;
+	color: #fff;
+}
+.section {
+	padding: 100px 0px;
+}
+.section-heading {
+	margin-bottom: 30px;
+	text-align:center;
+}
+ul {
+	list-style:none;
+	padding-left: 0px;
+	margin-bottom:10px;
+}
+ul li {
+	margin-bottom:10px;
+	color: #69666c;
+	font-weight: 300;
+}
+.lead-font {
+	font-size:23px;
+	line-height:32px;
+}
+/********* navbar css ********/
+ .navbar {
+	padding: 20px 0;
+	border-bottom: 0;
+	letter-spacing: 1px;
+	background: 0 0;
+ -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
+ -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
+ transition: background .5s ease-in-out, padding .5s ease-in-out;
+}
+.top-nav-collapse {
+	padding: 0;
+	background-color: #f6f6f3;
+}
+.navbar-custom.top-nav-collapse {
+	border-bottom: 1px solid rgba(255, 255, 255, .3);
+}
+.navbar-default .navbar-brand {
+	color: #fff;
+	font-family: 'Roboto', sans-serif;
+	font-size: 29px;
+}
+.navbar-brand {
+	float: left;
+	height: 54px;
+	padding: 15px 0px;
+	font-size: 18px;
+	line-height: 20px;
+}
+.navbar-default .navbar-toggle {
+	border-color: #aece35;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+	background-color: #aece35;
+}
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: #fff;
+}
+.navbar-toggle {
+	position: relative;
+	float: right;
+	padding: 9px 10px;
+	margin-top: 8px;
+	margin-right: 15px;
+	margin-bottom: 8px;
+	background-color: #aece35;
+	background-image: none;
+	border: 1px solid #aece35;
+	border-radius: 4px;
+}
+.navbar-collapse {
+	padding-right: 15px;
+	padding-left: 15px;
+	overflow-x: visible;
+	-webkit-overflow-scrolling: touch;
+	border-top: none;
+	-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1);
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1);
+}
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+	color: #2f2c2c;
+	background-color: none;
+}
+/******* navbar link **********/
+
+.navbar-default .navbar-nav>li>a {
+	color: #322f2f;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+}
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+	color: #2c2731;
+	background-color: transparent;
+}
+.navbar-nav li a i {
+	margin-right: 0px;
+	margin-left:0px;
+}
+.nav>li>a {
+	padding: 10px 0px;
+	margin-right: 12px;
+	margin-top: 5px;
+}
+.navbar-default .navbar-nav>li>a.sign-up {
+	border-bottom:1px solid #ffdb6f;
+	color:#ffdb6f;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+	color: #fff;
+	background-color:  transparent;
+}
+.intro-section {
+	background-color:#f6f6f3;
+}
+.intro-ct {
+	padding-top: 280px;
+}
+.intro-section h1 {
+	color: #322f2f;
+	font-size: 42px;
+	line-height: 62px;
+}
+.intro-section i {
+	margin-right: 5px;
+	margin-left: 10px;
+	font-size: 18px;
+}
+.hero-pic {
+	padding-top: 160px;
+	position: relative;
+}
+/************** Weight Loss Section ************/
+
+#weight-loss-section {
+}
+.weight-loss-section {
+	background-color:#f5d845;
+}
+.weight-loss-section .section-heading {
+	text-align:left;
+	margin-bottom: 70px;
+}
+.weight-loss-section h2 {
+	color:#222124;
+}
+.weight-loss-section p {
+	color:#444147;
+}
+
+.circle {
+	background-color: #feefa4;
+	font-size: 26px;
+	color: #2c2731;
+	text-align: center;
+	width: 64px;
+	height: 64px;
+	line-height: 2.6;
+	margin-bottom: 10px;
+}
+.quality {
+}
+.quality .row{ margin-bottom: 10px;}
+.quality .icon {
+	font-size:46px;
+	color:#de6d64;
+	text-align:center;
+}
+.lead-form {
+	padding: 40px 40px 20px;
+	background-color: #fff;
+	-webkit-box-shadow: 1px 2px 1px 1px rgba(40, 40, 40, .2);
+	/* box-shadow: 0 1px 1px rgba(0,0,0,0.3); */
+box-shadow: 0px 1px 1px 1px rgba(40, 40, 40, .2);
+}
+.form-group {
+	margin-bottom: 15px;
+}
+.lead-form .form-group label {
+	font-size: 16px;
+	font-weight: 300;
+	font-family: 'Roboto', sans-serif;
+	margin-bottom: 10px;
+}
+.lead-form .form-group .form-control {
+	height: 50px;
+	border: 2px solid #deddd8;
+	border-radius: 2px;
+	-webkit-box-shadow: inset 0 0px 0px rgba(0, 0, 0, .075);
+	box-shadow: inset 0 0px 0px rgba(0, 0, 0, .075);
+}
+.age-gender {
+	margin-bottom:40px;
+}
+.age-gender .form-control {
+	height: 48px;
+	background-color: #fff;
+	border: 2px solid #deddd8;
+	margin-right: 0px;
+	border-radius: 2px;
+}
+/************ Fitness Healthy-section *******************/
+
+#fitness-healthy-section {
+}
+.fitness-healthy-section {
+}
+.lifestyle {
+	border-bottom:1px solid #f0efea;
+	margin-bottom:60px;
+	padding-bottom:30px;
+}
+.fitness-healthy-section .section-heading {
+	text-align:center;
+}
+/*** List style arrow ****/
+.arrow-circle li:before {
+	content: "\f18e";
+	font-family: FontAwesome;
+	margin-right: 15px;
+	color: #69666c;
+	-webkit-font-smoothing: antialiased;
+}
+.program-box {
+	background-color: #fafaf8;
+	padding: 40px;
+	margin: 20px 0px;
+}
+.program-box h2 {
+	font-weight: 600;
+}
+.program-box .btn-green {
+	margin-top: 30px;
+}
+/************* burn-excess-fat-section Section ****************/
+
+#burn-excess-fat-section {
+}
+.burn-excess-fat-section {
+	background-color: #fafaf8;
+	text-align: center;
+}
+.burn-fat {
+	margin-top: 80px;
+}
+.burn-fat i {
+	color:#aece35;
+	font-size: 60px;
+	margin-bottom: 30px;
+}
+/**************** weekly-chat-section ****************/
+#weekly-chat-section {
+}
+.weekly-chat-section {
+}
+.table-bordered {
+	border: none;
+}
+.table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td {
+	padding: 20px;
+	line-height: 1.42857143;
+	vertical-align: top;
+	border-top: 1px solid #ddd;
+	font-size: 13px;
+}
+.table>thead>tr>th {
+	background-color: #f5d845;
+}
+.table-bordered>thead>tr>th, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, .table-bordered>tbody>tr>td, .table-bordered>tfoot>tr>td {
+	border:none;
+}
+/************** Testimonal Member Section ************/
+
+#customer-section {
+}
+.customer-section {
+	background-color: #fbfbf9;
+}
+.customer-ct {
+	margin-top:50px;
+}
+.quote {
+	font-size:32px;
+	line-height:42px;
+}
+.customer-name {
+	font-size:24px;
+	color:#cd1940;
+	font-weight: 300;
+}
+/*********** Footer Section *************/
+
+#footer {
+}
+footer {
+	background-color: #2c2731;
+}
+footer h2 {
+	color:#f5d845;
+	line-height: 38px;
+}
+.newsletter {
+	margin-bottom: 30px;
+	margin-top: 30px;
+}
+/*
+.get-quote {
+	margin-bottom: 30px;
+	margin-top: 30px;
+}*/
+.get-tip {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.get-tip .btn-yellow {
+	color:#2c2731;
+	text-transform: uppercase;
+	border: none;
+	border-radius: 2px;
+	padding: 12px 40px;
+	font-size: 18px;
+	font-weight: bold;
+	margin-top: 30px;
+}
+.newsletter .btn-quote {
+	padding: 13px 18px;
+	border-radius: 2px;
+	font-size: 16px;
+	border: none;
+	font-family: 'Roboto', sans-serif;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+	margin-bottom:20px;
+}
+.newsletter label {
+	color: #69666c;
+	font-weight: 300;
+}
+.newsletter .btn-submit {
+	padding: 10px 20px;
+	color: #2c2731;
+	font-weight: bold;
+	font-size: 16px;
+	border-radius: 2px;
+}
+.newsletter .form-control {
+	height: 48px;
+	background-color: #1d1922;
+	border: 0px solid #d6dae1;
+	margin-right: 0px;
+}
+.get-quote ul li {
+}
+.get-quote ul li i {
+	margin-right:5px;
+}
+.get-quote .btn-quote {
+	margin-bottom:35px;
+}
+.ft p {
+	color: #797777;
+	text-align: center;
+}
+.tiny-footer{ background-color: #1d1922; padding-top: 50px; padding-bottom:20px; text-align: center;;}
+
+
+/************ media Css for device *************/
+
+@media(max-width:767px) {
+ .intro-ct {
+padding-top: 140px;
+}
+.section {
+padding: 60px 0px;
+}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+border:none;
+background: #f6f6f3;
+}
+.lead-form {
+	padding: 20px;
+	background-color: #fff;
+	-webkit-box-shadow: 1px 2px 1px 1px rgba(40, 40, 40, .2);
+	/* box-shadow: 0 1px 1px rgba(0,0,0,0.3); */
+box-shadow: 0px 1px 1px 1px rgba(40, 40, 40, .2);
+}
+.btn-quote {
+padding: 15px 22px;
+border-radius: 2px;
+font-size: 20px;
+border: none;
+font-family: 'Roboto', serif;
+-webkit-transition: all 0.3s;
+-moz-transition: all 0.3s;
+transition: all 0.3s;
+margin-bottom: 10px;
+font-weight: 400;
+}
+}
